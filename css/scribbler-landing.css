@@ -1,0 +1,212 @@
+/* nav specialized to landing page */
+.logo {
+  background: url('../images/logo.svg') no-repeat;
+  background-size: contain;
+  margin: 1rem 0 0 1rem;
+}
+
+nav {
+  background-color: var(--bg-color);
+}
+
+/* hero section */
+.hero {
+  text-align: center;
+  background-color: var(--bg-color);
+  padding: 2rem 0 10rem 0;
+}
+
+.hero__title {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.hero__description {
+  margin: -1rem auto 2rem auto;
+}
+
+.hero__terminal {
+  width: 60%;
+  margin: -11rem auto 3rem auto;
+  text-align: left;
+  color: white;
+  padding: 0 1rem;
+  border-radius: 4px;
+  background-color: #232323;
+  min-height: 285px;
+  animation: fadeUp 2s;
+  box-shadow: 0px 12px 36.8px 9.2px rgba(0, 0, 0, 0.1);
+}
+
+.hero__terminal pre {
+  white-space: pre-line;
+  padding-top: 1rem;
+}
+
+/* feature section */
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature__item {
+  max-width: calc(50% - 20px);
+  /* margin: 0 20px 0 0; */
+}
+
+.feature__item .section__title {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.feature__item p {
+  margin-top: 0.5rem;
+}
+.feature__item img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* keybinding section */
+.keybinding {
+  margin-top: 3rem;
+}
+
+.keybinding__detail {
+  position: relative;
+  border: 1px solid var(--code-bg-color);
+  padding: 0.2rem 1rem 1rem 1rem;
+  list-style: none;
+  line-height: 2rem;
+}
+
+.keybinding__title {
+  margin-bottom: 1rem; /* 添加一些间距 */
+}
+
+/* 父容器，用于水平排列图片 */
+.keybinding__wrapper {
+  display: flex; /* 使用 flexbox 布局 */
+  gap: 1rem; /* 图片之间的间距 */
+  align-items: center; /* 垂直居中对齐（如果需要） */
+}
+
+/* 每个图片项的样式 */
+.keybinding__item {
+  display: flex; /* 保持子元素对齐（可选，具体看需求） */
+  align-items: center; /* 垂直居中对齐 */
+}
+
+.keybinding__image img {
+  max-width: 100px; /* 限制图片宽度，可根据需要调整 */
+  height: auto; /* 保持图片比例 */
+  display: block; /* 防止图片下方出现间隙 */
+}
+
+.keybinding__text {
+  font-size: 1rem; /* 根据需要调整字体大小 */
+  color: var(--dark-gray-color);
+}
+
+
+
+
+/* callout section */
+.callout {
+  text-align: center;
+  padding: 1rem 0 3rem 0;
+}
+
+.callout .button--primary {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* changelog section */
+.changelog {
+  background-color: var(--bg-color);
+  padding: 2rem 0;
+}
+
+/* .changelog__item {
+  display: flex;
+} */
+
+.changelog__meta {
+  flex-basis: 25%;
+}
+
+.changelog__meta small {
+  color: var(--primary-color-light);
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.changelog__title {
+  margin-bottom: 0;
+}
+
+.changelog__callout {
+  margin: 3rem auto 2rem auto;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .hero__terminal {
+    width: 70%;
+  }
+  .tab__container > ul {
+    right: auto;
+    left: 0;
+    padding-left: 0;
+  }
+  .tab__container .code {
+    margin-top: 2rem;
+  }
+  .feature, .keybinding, .changelog__item {
+    flex-direction: column;
+  }
+  .feature__item {
+    max-width: 100%;
+    margin: 0;
+  }
+  .keybinding {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+.circle-mask {
+  display: inline-block;
+  width: 168px;    /* 容器宽度 */
+  height: 226px;   /* 容器高度 */
+  overflow: hidden;
+  border-radius: 10px; /* 改为圆角矩形 */
+  position: relative;
+}
+ 
+.circle-mask img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持比例填充 */
+}
+.myowntitle{
+  font-family: "Times New Roman", "楷体", serif;
+
+  /* font-family: 'Nunito Sans', sans-serif; */
+  background-color: white;
+  font-size: 1.17em;
+  color: var(--primary-color);
+}
