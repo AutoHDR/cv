@@ -318,10 +318,10 @@ table td:first-child {
 
 .paper-item {
   background-color: #f8f9fa; /* 浅灰色背景 */
-  padding: 8px 12px;         /* 内边距 */
-  margin: 4px 0;             /* 外边距 */
-  border-radius: 4px;        /* 圆角 */
-  border-left: 4px solid #4a90e2; /* 左侧高亮条 */
+  padding: 10px 12px;         /* 内边距 */
+  margin: 8px 0;             /* 外边距 */
+  border-radius: 2px;        /* 圆角 */
+  border-left: 4px solid transparent; /* 左侧高亮条 */
   transition: all 0.3s ease; /* 平滑过渡效果 */
   font-size:1.2em; /* 字体大小 */
   list-style-type: none; /* 去掉默认列表样式 */
