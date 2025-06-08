@@ -38,12 +38,13 @@
     </div>
     <div class="wrapper">
       <div class="installation">
-        <h3 class="section__title">相关成果</h3>
+        <h3 class="section__title">学术成果</h3>
         <div class="tab__container">
           <ul class="tab__menu">
             <li class="tab active" data-tab="Paper">论文</li>
             <li class="tab" data-tab="Project">项目</li>
-            <!-- <li class="tab" data-tab="win">获奖</li> -->
+            <li class="tab" data-tab="win">获奖</li>
+            <li class="tab" data-tab="Patent">专利</li>
           </ul>
           <pre class="nohighlight code">
             <code class="tab__pane active Paper">
@@ -93,6 +94,9 @@
             </code>
             <code class="tab__pane Project">
               <li class="paper-item">
+                多学科交叉研究生人才培养新模式与路径研究, 校级教改, 2024-09-01 至 2025-08-31, <span class="tag hold">主持</span>
+              </li>    
+              <li class="paper-item">
                 雨水及除霜软件开发合同, 横向项目, 2024-04-01 至 2024-03-31, <span class="tag hold">主持</span>
               </li>    
               <li class="paper-item">
@@ -116,9 +120,15 @@
               <li class="paper-item">
                 中国民间美术非物质文化遗产的信息化保护和传承关键技术及集成与示范, 科技支持计划项目, 2015-10-01 至 2016-10-31, <span class="tag participate">参与</span>
               </li> 
-              
             </code>
-            <code class="tab__pane win">$  gem install scribbler</code>
+            <code class="tab__pane win">
+              <li class="paper-item">科研之星 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 天津工业大学计算机科学与技术学院 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2025.01</li>
+              <li class="paper-item">优秀学员 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 天津市高等学校师资培训中心 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2024.06</li>
+            </code>
+            <code class="tab__pane Patent">
+              <li class="paper-item">一种基于点刻的散点图可视抽象方法</li>
+              <li class="paper-item">基于文献共引聚类的研究前沿可视分析方法</li>
+            </code>
           </pre>
         </div>
       </div>
@@ -160,5 +170,19 @@
     <script src="./js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script src="./js/scribbler.js"></script>
+    <script>
+    // 页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', function() {
+        const items = document.querySelectorAll('.paper-item');
+        
+        items.forEach(item => {
+            // 生成随机十六进制颜色
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+            
+            // 应用随机颜色到边框
+            item.style.borderLeftColor = randomColor;
+        });
+    });
+</script>
   </body>
 </html>
