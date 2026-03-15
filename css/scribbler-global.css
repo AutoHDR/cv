@@ -113,7 +113,7 @@ hr {
 
 /* buttons */
 .button--primary {
-  padding: 10px 22px;
+  padding: 5px 22px;
   background-color: var(--accent-color);
   color: white;
   position: relative;
