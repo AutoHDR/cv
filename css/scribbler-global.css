@@ -343,7 +343,10 @@ table td:first-child {
   background-color: #b9b5c5;  /* 浅黄绿色 */
 
 }
-
+.tag.paper-type {
+  background-color: #a8a7ed;  /* 浅黄绿色 */
+  font-family: "Times New Roman", "楷体", serif;
+}
 .tag.ccf-t1 {
   background-color: #bbe8d1;  /* 浅黄绿色 */
   font-family: "Times New Roman", "楷体", serif;
